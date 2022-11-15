@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f0d27e658f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/omkar (2).png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#softwares">Softwares I Know</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#achievements">Co-curricular Activities & Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Electronics & Communication Engineer</p>
+            <h1>Hi, I'm <span>Omkar</span><br>Sangrulkar From India</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/MyAbout.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Interested and enthusiastic in embedded systems. Active team player. Accustomed to work in high pressure situations. Have practical experienceof working in electronics and embedded systems. Worked on certain projects like Automatic garbage segregation, Posture detection, Homeautomation, Adaptive CVT cooling, Developing a storage server.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('intrests')">Other skills and intrests</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Embeded Systems</span><br>Worked on Projects based on Arduino, Raspberry Pi, ESP, Jetson Nano</li>
+                        <li><span>C</span><br>Hackerrank 5 star</li>
+                        <li><span>Python</span><br>Hacker rank 5 star</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="intrests">
+                    <ul>
+                        <li><span>Team Work</span><br>Working in Team Piranha Racing an Official BAJA SAE team.</li>
+                        <li><span>Leadership Skills</span><br>Went to tadoba with Pugmarks as a co-ordinator.</li>
+                        <li><span>Reading Bookd</span><br>Love to read books especially biography.</li>
+                        <li><span>Cooking</span><br>Cook many types of indian and italian food.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020-current</span><br>B.Tech. - Electronics & Communication Engineering - MIT - WPU</li>
+                        <li><span>2020</span><br>12th Late P. B. Jog Jr. College, Pune</li>
+                        <li><span>2018</span><br>10th Abhinav Vidyalaya, Pune</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------softwares---------------- -->
+<div id="softwares">
+    <div class="container">
+        <h1 class="sub-title">Softwares I Know</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Arduino IDE</h2>
+                <p>The open-source Arduino Software (IDE) makes it easy to write code and upload it to the board. This software can be used with any Arduino board.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-file-contract"></i>
+                <h2>Matlab</h2>
+                <p>MATLAB is the easiest and most productive computing environment for engineers and scientists. With math, graphics, and programming, it's designed for the way you think and the work you do.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-atom"></i>
+                <h2>Proteus</h2>
+                <p>The Proteus Design Suite combines ease of use with a powerful feature set to enable the rapid design, test and layout of professional printed circuit boards.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------projects------------ -->
+<div id="project">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/CVTCooling.png">
+                <div class="layer">
+                    <h3>Adaptive CVT cooling</h3>
+                    <p>Adaptive CVT colling system using Arduino nano iot. The temperature data and fan state can be monitored on iot dashboard wirelessly. The deta isalso stored in sdcard module for further analysis.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/posture.png">
+                <div class="layer">
+                    <h3>Posture detection using opencv</h3>
+                    <p>Implimented human posture analysis using opencv. It shows angles between joints of human body by capturing live video from camera.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/HomeAutomation.png">
+                <div class="layer">
+                    <h3>Home automation using esp8266</h3>
+                    <p>Developed a cheap home automation system using esp8266 which is can be controlled using web page on same network. The web page was made using a basic html template and code.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------achievemments------------ -->
+<div id="achievements">
+    <div class="container">
+        <h1 class="sub-title">Co-curricular Activities & Achievements</h1>
+        <div class="activity-list">
+            <div class="activity">
+                <img src="images/TPR.jpg">
+                <div class="upbar">
+                    <h3>Team Piranha Racing</h3>
+                    <p>Part of team Piranha Racing an official MIT WPU's baja SAE team. Working in electronics department on validations and subsystems.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="activity">
+                <img src="images/Team Bolt.jpg">
+                <div class="upbar">
+                    <h3>Team Bolt</h3>
+                    <p>Was part of team BOLT for 1 year in first year. We worked on the manufacturing of a electric golf cart.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="activity">
+                <img src="images/TPRW.jpg">
+                <div class="upbar">
+                    <h3>AIR2</h3>
+                    <p>Obataind AIR2 as a part of Piranha Racing in the BAJA SAE season 21-22 aur of around 120 teams all over India. In it worked in electronics department on validations and subsystems.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="brn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> omkarsangrulkar14@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> +91 9307210791</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100010582629617"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://instagram.com/s_omkar_14?igshid=ZDdkNTZiNTM="><i class="fab fa-instagram"></i></a>
+                    <a href="http://www.linkedin.com/in/omkar-sangrulkar-11a7981b3"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/My Resume 4.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Portfolio Made With HTML, JScript & CSS by Omkar Sangrulkar</p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz92vjRVmnTSzixADCG8ABrzwyX0oGjpSKUWkuyovZTaGqMZVrsn29uy8odfeFV7TdM7Q/exec' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
